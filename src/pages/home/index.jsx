@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Home() {
+export default function Homex() {
   return (
     <div className="container">
       <div className="row">
@@ -21,7 +21,7 @@ export default function Home() {
       </div>
       <div className="row">
         <div className="col-6">
-          <button type= submit className="btn btn-success">
+          <button type= 'submit' className="btn btn-success">
             Login
           </button>
         </div>
