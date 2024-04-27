@@ -3,29 +3,11 @@ import React from 'react';
 export default function Homex() {
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-6">
-          <label className="font-label">
-            User:
-          </label>
-          <input type='text' className='form-control' />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-6">
-          <label className="font-label">
-            Pass:
-          </label>
-          <input type='text' className='form-control' />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-6">
-          <button type= 'submit' className="btn btn-success">
-            Login
-          </button>
-        </div>
-      </div>
+
+      <img src="/HomePage.jpg"/>
+        <a href="#" className="button">LOGIN</a>
+        <a href="../signupx" className="button2">SIGN UP</a>
+      
     </div>
   );
 }
