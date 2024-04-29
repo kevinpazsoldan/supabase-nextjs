@@ -6,19 +6,13 @@ export default function Signupx () {
 
       <img src="/SignUp2.jpg"/>
 
-      <div className="wrapper">
-        <div className="input-data"></div>
+  
         <input type='text' className="singupname" placeholder='Name'></input>
-        </div>  
-
-        
-
-
-        <input type='text' className="lastname" placeholder='Last Name'></input>
-        <input type='text' className="email"placeholder='Email'></input>
-        <input type='text' className="password" placeholder='Password'></input>
-        <a href="../home" className="button3">CANCEL</a>
-        <a href="#" className="button4">SIGN UP</a>
+        <input type='text' className="signuplastname" placeholder='Last Name'></input>
+        <input type='text' className="signupemail"placeholder='Email'></input>
+        <input type='text' className="signuppassword" placeholder='Password'></input>
+        <a href="#" className="signupsignupbutton">SIGN UP</a>
+        <a href="../login" className="signuploginbutton">LOGIN</a>
 
       </div> 
       

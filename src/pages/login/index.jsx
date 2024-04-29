@@ -8,8 +8,8 @@ export default function Login () {
 
         <input type='text' className="email"placeholder='Email'></input>
         <input type='text' className="password" placeholder='Password'></input>
-        <a href="../home" className="button3">CANCEL</a>
-        <a href="#" className="button4">LOGIN</a>
+        <a href="../home" className="logincancel">CANCEL</a>
+        <a href="#" className="loginlogin">LOGIN</a>
 
     </div> 
       
