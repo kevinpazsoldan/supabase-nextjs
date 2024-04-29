@@ -18,7 +18,7 @@ td {
   height: auto;
 }
 
-.button {
+.homelogin {
   position: absolute;
   top: 76%;
   left: 9%;
@@ -31,7 +31,7 @@ td {
   cursor: pointer;
   text-decoration: none;
 }
-.button2 {
+.homesignup {
   position: absolute;
   top: 76%;
   left: 15%;
@@ -97,17 +97,23 @@ td {
   text-decoration: none;
 }
 
-.button:hover {
+.homelogin:hover {
   background-color: #0056b3;
 }
-.button2:hover {
+.homesignup:hover {
   background-color: #0056b3;
 }
-.button3:hover {
+.loginlogin:hover {
   background-color: #0056b3;
 }
-.button4:hover {
+.logincancel:hover {
+  background-color: #787b7c;
+}
+.signupsignupbutton:hover {
   background-color: #0056b3;
+}
+.signuploginbutton:hover {
+  background-color: #787b7c;
 }
 .singupname {
   position: absolute;
@@ -118,7 +124,6 @@ td {
   background-color: white;
   color: black;
   border-radius: 5px;
-  cursor: pointer;
   text-decoration: none;
 }
 .signuplastname {
@@ -130,43 +135,40 @@ td {
   background-color: white;
   color: black;
   border-radius: 5px;
-  cursor: pointer;
   text-decoration: none;
 
 }
 .signupemail {
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px 80px;
   background-color: white;
   color: black;
   border-radius: 5px;
-  cursor: pointer;
   text-decoration: none;
 
 }
 .signuppassword {
   position: absolute;
-  top: 70%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px 80px;
   background-color: white;
   color: black;
   border-radius: 5px;
-  cursor: pointer;
   text-decoration: none;
 
 }
-.signsignupbutton {
+.signupsignupbutton {
   position: absolute;
-  top: 87%;
-  left: 30%;
+  top: 100%;
+  left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px 145px;
-  background-color: #95989b;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
@@ -175,14 +177,37 @@ td {
 }
 .signuploginbutton {
   position: absolute;
-  top: 80%;
+  top: 107%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px 150px;
-  background-color: #007bff;
+  padding: 10px 151px;
+  background-color: #95989b;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
+}
+.loginemail {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 80px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.loginpassword {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 80px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
   text-decoration: none;
 }
