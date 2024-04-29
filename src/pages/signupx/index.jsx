@@ -14,9 +14,9 @@ export default function Signupx () {
         
 
 
-        <input type='text' className="lastname"></input>
-        <input type='text' className="email"></input>
-        <input type='text' className="password"></input>
+        <input type='text' className="lastname" placeholder='Last Name'></input>
+        <input type='text' className="email"placeholder='Email'></input>
+        <input type='text' className="password" placeholder='Password'></input>
         <a href="../home" className="button3">CANCEL</a>
         <a href="#" className="button4">SIGN UP</a>
 

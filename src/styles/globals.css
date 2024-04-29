@@ -46,8 +46,8 @@ td {
 }
 .button3 {
   position: absolute;
-  top: 50%;
-  left: 60%;
+  top: 90%;
+  left: 47%;
   transform: translate(-50%, -50%);
   padding: 10px 10px;
   background-color: #007bff;
@@ -59,8 +59,8 @@ td {
 }
 .button4 {
   position: absolute;
-  top: 52.5%;
-  left: 60%;
+  top: 90%;
+  left: 53%;
   transform: translate(-50%, -50%);
   padding: 10px 20px;
   background-color: #007bff;
@@ -85,26 +85,24 @@ td {
 }
 .singupname {
   position: absolute;
-  top: 45%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px 100px;
+  padding: 10px 80px;
   background-color: white;
   color: black;
-  
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
 }
 .lastname {
   position: absolute;
-  top: 55%;
+  top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px 100px;
+  padding: 10px 80px;
   background-color: white;
   color: black;
-  
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
@@ -112,13 +110,12 @@ td {
 }
 .email {
   position: absolute;
-  top: 65%;
+  top: 67%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px 100px;
+  padding: 10px 80px;
   background-color: white;
   color: black;
-  
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
@@ -126,13 +123,12 @@ td {
 }
 .password {
   position: absolute;
-  top: 75%;
+  top: 77%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px 100px;
+  padding: 10px 80px;
   background-color: white;
   color: black;
-  
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;

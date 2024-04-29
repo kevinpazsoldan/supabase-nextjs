@@ -5,8 +5,8 @@ export default function Homex() {
     <div className="container">
 
       <img src="/HomePage2.jpg"/>
-        <a href="#" className="button">LOGIN</a>
-        <a href="../signupx" className="button2">SIGN UP</a>
+        <a href="../login" className='button'>LOGIN</a>
+        <a href="../signupx" className='button2'>SIGN UP</a>
       
     </div>
   );
