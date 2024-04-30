@@ -6,7 +6,7 @@ export default function Login () {
 
       <img src="/LogIn2.jpg"/>
 
-        <input type='text' className="loginemail"placeholder='Email'></input>
+        <input type='email' className="loginemail"placeholder='Email'></input>
         <input type='password' className="loginpassword" placeholder='Password'></input>
         <a href="#" className="loginlogin">LOGIN</a>
         <a href="../home" className="logincancel">CANCEL</a>
