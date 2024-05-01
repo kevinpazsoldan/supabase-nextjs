@@ -13,7 +13,7 @@ export default function Signupx () {
         <input type='text' class="signuplastname" placeholder='Last Name'/>
         <input type='email' class="signupemail" placeholder='Email'/>
         <input type='password' class="signuppassword" placeholder='Password'/>
-        <a href="#" class="signupsignupbutton">SIGN UP</a>
+        <button href="#" class="signupsignupbutton">SIGN UP</button>
         <a href="../login" class="signuploginbutton">LOGIN</a>
         
       </div>

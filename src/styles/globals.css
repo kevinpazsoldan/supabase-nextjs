@@ -51,12 +51,22 @@ td {
   top: 25%;
   left: 32%;
   right: 30%;
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
 }
 
-.login-form input,
+.login-form input {
+  display: block;
+  width: calc(100% - 40px);
+  margin-bottom: 17px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid rgb(216, 212, 212); /* Add transparent border initially */
+  border-radius: 5px; /* Added border-radius */
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Add transition for border color and scale */
+}
+
 .login-form button,
 .login-form a {
   display: block;
@@ -69,18 +79,18 @@ td {
   border-radius: 5px; /* Added border-radius */
   transition: border-color 0.3s ease, transform 0.3s ease; /* Add transition for border color and scale */
 }
-
 .login-form input:hover,
-.login-form button:hover,
-.login-form a:hover {
+.login-form button:hover {
   border-color: #007bff; /* Change border color on hover */
   transform: scale(1.05); /* Scale up on hover */
 }
-
+.login-form button:hover,
+.login-form a:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
 .login-form button {
   background-color: #007bff;
   color: #fff;
-  border: none;
   cursor: pointer;
 }
 
@@ -112,12 +122,23 @@ td {
   top: 25%;
   left: 32%;
   right: 30%;
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
 }
 
-.form-container input,
+.form-container input {
+  display: block;
+  width: calc(100% - 40px);
+  margin-bottom: 17px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid rgb(216, 212, 212); /* Initially transparent border */
+  border-radius: 5px; /* Added border-radius */
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Transition for border color and scale */
+}
+
+.form-container button,
 .form-container a {
   display: block;
   width: calc(100% - 40px);
@@ -131,11 +152,15 @@ td {
 }
 
 .form-container input:hover,
-.form-container a:hover {
+.signupsignupbutton:hover {
   border-color: #007bff; /* Highlight border color on hover */
   transform: scale(1.05); /* Scale up on hover */
 }
 
+.form-container a:hover,
+.form-container button:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
 .signupsignupbutton {
   background-color: #007bff;
   color: #fff;
