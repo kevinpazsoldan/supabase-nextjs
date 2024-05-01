@@ -1,6 +1,7 @@
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
+import Link from 'next/link';
 
 export default function Login() {
   const form = useForm({
@@ -52,14 +53,14 @@ export default function Login() {
 
     <div className="container">
 
-      <img src="/LogIn2.jpg" alt="Login Background Image"/>
+      <img src="/LogIn.jpg" alt="Login Background Image"/>
 
       <form onSubmit={form.handleSubmit(handleLogin)} className="login-form">
 
         <input type='email' className="loginemail" placeholder='Email' {...form.register("email")}/>
         <input type='password' className="loginpassword" placeholder='Password' {...form.register("password")}/>
         <button type="submit" className="loginlogin">LOGIN</button>
-        <a href="../home" className="logincancel">CANCEL</a>
+        <Link href="/home" className="logincancel">CANCEL</Link>
 
       </form>
 

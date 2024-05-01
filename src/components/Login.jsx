@@ -39,6 +39,9 @@ export function Login() {
     const { data, error: signInError } = await supabase.auth.signUp({
       email: values.email,
       password: values.password,
+      options: {
+        data: {}
+      }
     });
 
     if (signInError) {

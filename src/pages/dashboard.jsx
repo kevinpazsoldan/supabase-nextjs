@@ -11,21 +11,13 @@ export default securePage(function Dashboard() {
   const supabase = useSupabaseClient();
   const router = useRouter();
   const user = useUser();
-  const [imageUrl, setImageUrl] = useState("0.1466368422093962.jpg");
-
-  const [companies, setCompanies] = useState([]);
-  useEffect(() => {
-    getCompanies(supabase).then(setCompanies);
-  }, []);
-
+  
   const handleSignOut = async () => {
     await supabase.auth.signOut();
     router.push("/");
   };
 
-  const handlerDelete = (id) => async () => {
-    await deleteCompany(supabase, id);
-  };
+ 
 
   return (
     <div>
@@ -33,20 +25,7 @@ export default securePage(function Dashboard() {
       <button type="button" onClick={handleSignOut}>
         Sign out
       </button>
-      <ul>
-        {companies.map((company, index) => (
-          <li key={company.id}>
-            {company.name}{" "}
-            <button type="button" onClick={handlerDelete(company.id)}>
-              Delete
-            </button>
-          </li>
-        ))}
-      </ul>
-      <p>
-        <b>{imageUrl}</b>
-      </p>
-      <ImageInput bucket="pictures" value={imageUrl} onChange={setImageUrl} />
+      
     </div>
   );
 });
