@@ -6,208 +6,162 @@ td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
+/* HOME */
+
 .container {
-  display: flex;
-  justify-content: center;
-}
-
-.img {
-  display: flex;
-  align-items: center;
+  position: relative;
   width: 100%;
-  height: auto;
 }
 
-.homelogin {
-  position: absolute;
-  top: 76%;
-  left: 9%;
-  transform: translate(-50%, -50%);
-  padding: 10px 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
+.container img {
+  width: 100%;
+  display: block;
 }
-.homesignup {
+
+.buttons-container {
   position: absolute;
-  top: 76%;
-  left: 15%;
-  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 3%;
+}
+
+.buttons-container a {
+  display: inline-block;
+  margin: 10px;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  font-size: 16px;
   text-decoration: none;
+  color: #fff;
+  background-color: #007bff; /* Updated background color */
+  border-radius: 5px; /* Added border-radius */
 }
-.loginbutton {
+
+.buttons-container a:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+
+
+
+/* LOG IN */
+
+
+.login-form {
   position: absolute;
-  top: 108%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 155px;
-  background-color: #95989b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
+  top: 25%;
+  left: 32%;
+  right: 30%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
 }
-.signupbutton {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 150px;
+
+.login-form input,
+.login-form button,
+.login-form a {
+  display: block;
+  width: calc(100% - 40px);
+  margin-bottom: 17px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid transparent; /* Add transparent border initially */
+  border-radius: 5px; /* Added border-radius */
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Add transition for border color and scale */
+}
+
+.login-form input:hover,
+.login-form button:hover,
+.login-form a:hover {
+  border-color: #007bff; /* Change border color on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.login-form button {
   background-color: #007bff;
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  text-decoration: none;
 }
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
 .logincancel {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 146px;
-  background-color: #95989b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  background-color: #b1b9c2;
+  color: #fff;
   text-decoration: none;
-}
-.loginlogin {
-  position: absolute;
-  top: 83%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 152px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  width: calc(100% - 40px);
+  padding: 10px;
+  text-align: center;
 }
 
-.homelogin:hover {
-  background-color: #0056b3;
-}
-.homesignup:hover {
-  background-color: #0056b3;
-}
-.loginlogin:hover {
-  background-color: #0056b3;
-}
 .logincancel:hover {
-  background-color: #787b7c;
+  text-decoration: underline;
 }
-.signupsignupbutton:hover {
-  background-color: #0056b3;
-}
-.signuploginbutton:hover {
-  background-color: #787b7c;
-}
-.singupname {
-  position: absolute;
-  top: 60%;
-  left: 38.5%;
-  right: 38.5%;
-  padding: 10px 20px;
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  text-decoration: none;
-}
-.signuplastname {
-  position: absolute;
-  top: 70%;
-  left: 38.5%;
-  right: 38.5%;
-  padding: 10px 20px;
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  text-decoration: none;
 
-}
-.signupemail {
-  position: absolute;
-  top: 80%;
-  left: 38.5%;
-  right: 38.5%;
-  padding: 10px 20px;
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  text-decoration: none;
 
-}
-.signuppassword {
-  position: absolute;
-  top: 90%;
-  left: 38.5%;
-  right: 38.5%;
-  padding: 10px 20px;
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  text-decoration: none;
+/* SIGN UP */
 
+
+.form-container {
+  position: absolute;
+  top: 25%;
+  left: 32%;
+  right: 30%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
 }
+
+.form-container input,
+.form-container a {
+  display: block;
+  width: calc(100% - 40px);
+  margin-bottom: 17px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid transparent; /* Initially transparent border */
+  border-radius: 5px; /* Added border-radius */
+  transition: border-color 0.3s ease, transform 0.3s ease; /* Transition for border color and scale */
+}
+
+.form-container input:hover,
+.form-container a:hover {
+  border-color: #007bff; /* Highlight border color on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
 .signupsignupbutton {
-  position: absolute;
-  top: 103%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 145px;
   background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  color: #fff;
   text-decoration: none;
-}
-.signuploginbutton {
-  position: absolute;
-  top: 110%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 151px;
-  background-color: #95989b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-}
-.loginemail {
-  position: absolute;
-  top: 60%;
-  left: 38.5%;
-  right: 38.5%;
-  padding: 10px 20px;
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  width: calc(50% - 20px);
+  padding: 10px;
+  text-align: center;
 }
 
-.loginpassword {
-  position: absolute;
-  top: 70%;
-  left: 38.5%;
-  right: 38.5%;
-  padding: 10px 20px;
-  background-color: white;
-  color: black;
-  border-radius: 5px;
+.signupsignupbutton:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+.signuploginbutton {
+  background-color: #b1b9c2;
+  color: #fff;
   text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  width: calc(50% - 20px);
+  padding: 10px;
+  text-align: center;
+}
+
+.signuploginbutton:hover {
+  text-decoration: underline;
 }

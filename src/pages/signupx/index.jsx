@@ -2,20 +2,24 @@ import React from 'react';
 
 export default function Signupx () {
   return (
-    <div className="container">
 
-      <img src="/SignUp2.jpg"/>
+    <div class="container">
 
-  
-        <input type='text' className="singupname" placeholder='Name'></input>
-        <input type='text' className="signuplastname" placeholder='Last Name'></input>
-        <input type='email' className="signupemail"placeholder='Email'></input>
-        <input type='text' className="signuppassword" placeholder='Password'></input>
-        <a href="#" className="signupsignupbutton">SIGN UP</a>
-        <a href="../login" className="signuploginbutton">LOGIN</a>
+      <img src="/SignUp2.jpg" alt="Login Background Image"/>
 
-      </div> 
+      <div class="form-container">
+
+        <input type='text' class="singupname" placeholder='Name'/>
+        <input type='text' class="signuplastname" placeholder='Last Name'/>
+        <input type='email' class="signupemail" placeholder='Email'/>
+        <input type='password' class="signuppassword" placeholder='Password'/>
+        <a href="#" class="signupsignupbutton">SIGN UP</a>
+        <a href="../login" class="signuploginbutton">LOGIN</a>
+        
+      </div>
+
+    </div>
+ 
       
-    
   );
 }
